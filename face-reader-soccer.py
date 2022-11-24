@@ -155,15 +155,11 @@ else:
 
 # %%
 test_img_path = 'test_images'
-test_img_list = glob(f'{test_img_path}/*.jpg')
-n_images = len(test_img_list)
-images = []
-for i in range(n_images):
-    image_name = f'{test_img_path}/{i:02d}.jpg'
-    images.append(image_name)
+test_img_list = glob(f'{test_img_path}/??.jpg')
+
 
 #plt.figure()
-for image in images:
+for image in test_img_list:
     img = Image.open(image)
 #    plt.imshow(img)
 #plt.show()
@@ -171,7 +167,7 @@ for image in images:
 
 # %%
 crop_images = []
-for i, image in enumerate(images):
+for i, image in enumerate(test_img_list):
     img = Image.open(image)
     dets = detector(np.array(img))
     if len(dets) == 1:
