@@ -1,6 +1,9 @@
 # face-reader-soccer
 
 ![image](test_images/02.jpg)
+
+This is an implementation of https://colab.research.google.com/drive/1H-AJX_URzN1fJn1Vhjh1_ehwc5Ih7eTe?usp=sharing (Google CoLab) on a local machine. If you have a machine with GPU, let's run the code on your machine.
+
 ## Environment Setup
 
 ```bash
@@ -35,7 +38,7 @@ $ conda activate face-reader-soccer
 ```bash
 (face-reader-soccer) $ python face-reader-soccer.py
 ```
-- You will see who is the best among guys in the `test_images` directory.
+- You will see who is the most likely best soccer player among guys in the `test_images` directory.
 
 ![image](test_images/crop00.jpg)
 ![image](test_images/crop01.jpg)
