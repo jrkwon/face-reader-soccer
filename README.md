@@ -26,7 +26,10 @@ Files can be downloaded from https://drive.google.com/drive/folders/1nVU7dO_3X_m
 - `dataset/imgs.zip` must be unzip before using it.
 - `model/model.tflite`: When an object of ArcFace class is instantiated, this model is supposed to be downloaded. Yet, I see time-out errors before the download ends. I manually downloaded this pretrained model file and the model path must be specified when ArcFace class is instantiated.
 ```python
+...
+# python code example
 face_rec = ArcFace.ArcFace(model_path='model/model.tflite')
+...
 ```
 
 ## Test
