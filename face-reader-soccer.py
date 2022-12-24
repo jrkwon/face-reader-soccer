@@ -32,11 +32,11 @@ retrain = False # if you want to retrain the model, change this to True
 model_loaded = False
 
 if not os.path.exists(data_path):
-    os.makdirs(data_path)
+    os.makedirs(data_path)
 if not os.path.exists(data_imgs_path):
-    os.makdirs(data_imgs_path)
+    os.makedirs(data_imgs_path)
 if not os.path.exists(model_path):
-    os.makdirs(model_path)
+    os.makedirs(model_path)
 
 
 # %%
